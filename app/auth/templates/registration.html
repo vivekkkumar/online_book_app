@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <div class="container form">
+        <h4> Register Here </h4>
+        <hr><br><br>
+
+        <!-- Using flask bootstrap to get some built in forms instead of coding html like below -->
+
+        {{ form.hidden_tag() }}
+        {{ wtf.quick_form(form) }}
+
+    </div>
+
+{% endblock content %}
+
+
+
